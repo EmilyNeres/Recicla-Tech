@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -11,35 +15,137 @@
     --cor3:#4B5563;
     --cor4:#16A34A;
     --cor5:#2563EB;
+    --cor6: #21c05c;
+    --cor7:#ffff;
+
+    --fonte-principal:'Poppins', sans-serif;
+    --fonte-secundaria:'Inter', sans-serif;
 }
 
 header{
-    border:solid RED 2px ;
+    // border:solid RED 2px ;
     display: flex;
     justify-content: space-between;
-    background-color: var(--cor0);
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: var(--cor7);
+    font-family: var(--fonte-principal);
+    font-size: 1rem;
+    font-weight: 300;
+    padding: 20px 25px 10px 25px ;
 
-    ul{
+    img{
+        // border: solid green 2px;
+        width: 20vw;
+        max-width: 245px;
+        height: auto;
+    }
+
+    nav{
+         ul{
+        // border: solid blue 2px;
         display: flex;
+        flex-wrap: wrap;
+         list-style: none;
+         align-items: center;
+        gap:2vw;
+         
         
-    
-       
-  list-style: none;
-    a{
-        
+    li{
+         a{
         text-decoration: none;
-        color: black;
+        color: var(--cor2);
+        transition:0.3s ease ;
+
+        &:hover{
+            color: var(--cor5);
+        }   
+        
+    }
+
+    &#starNow a{
+        background-color: var(--cor4);
+        color: var(--cor1);
+        padding: 15px 25px;
+        border-radius: 6px;
+
+        &:hover{
+            background-color: var(--cor6);
+        }
+    }
+        
     }
 }
+    }
+  
 
 }
 
-section{
-    border: solid red 2px;
+.queroDoar{
+    border: solid purple 2px;
+    height: 80vh;
+    display: flex;
+    font-family: var(--fonte-principal);
+    // text-align: center;
+
+    .text{
+        border: solid pink 2px;
+        margin: 90px 60px;
+    }
+   
+     h1{
+        font-size: 3.75rem;
+     }
+     p{
+        font-family: var(--fonte-secundaria);
+        font-weight: 200;
+        font-size: 1.25rem;
+        font-style: normal;
+     }
+
+     button{
+        border-radius: 6px;
+        padding: 15px 25px;
+        align-items: center;
+
+
+     }
+
+      #bntDoar{
+        background-color: var(--cor4);
+        color: var(--cor1);
+         }
+
+        #bntAdquirir{
+            background-color: var(--cor1);
+            color: var(--cor5);
+            border: solid var(--cor5) 1px;
+        }
+
+     
 }
+
+
 
 .numeros{
+    height: 30vh;
+    display: flex;
     background-color: var(--cor1);
+    font-family: var(--fonte-principal);
+    justify-content: space-around;
+    align-items: center;
+
+
+    h2{
+        color: var(--cor4);
+        font-size: 2.5rem;
+        margin-left: 25%;
+    }
+
+    p{
+        font-size: 1rem;
+        font-weight: 200;
+    }
     
 }
 
