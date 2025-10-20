@@ -4,10 +4,20 @@
   box-sizing: border-box;
 }
 
+:root {
+  --cor0:#F0FDF4;
+  --cor1:#F3F5F8;
+  --cor2:#1F2937;
+  --cor3:#4B5563;
+  --cor4:#16A34A;
+  --cor5:#2563EB;
+}
+
 header {
   border: solid RED 2px;
   display: flex;
   justify-content: space-between;
+  background-color: var(--cor0);
 }
 header ul {
   display: flex;
@@ -20,4 +30,12 @@ header ul a {
 
 section {
   border: solid red 2px;
+}
+
+.numeros {
+  background-color: var(--cor1);
+}
+
+footer {
+  background-color: var(--cor2);
 }/*# sourceMappingURL=style.css.map */
