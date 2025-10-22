@@ -14,6 +14,7 @@
   --cor4:#16A34A;
   --cor5:#2563EB;
   --cor6: #21c05c;
+  --cor7:#ffff;
   --fonte-principal:"Poppins", sans-serif;
   --fonte-secundaria:"Inter", sans-serif;
 }
@@ -149,6 +150,122 @@ header nav ul li#starNow a:hover {
   padding: 2rem;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
   max-width: 420px;
+}
+.comoFunciona .cardDoares h3,
+.comoFunciona .cardAdquirentes h3 {
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.comoFunciona .cardDoares h3 img,
+.comoFunciona .cardAdquirentes h3 img {
+  width: 45px;
+  height: 45px;
+}
+.comoFunciona .cardDoares ol,
+.comoFunciona .cardAdquirentes ol {
+  margin-top: 15px;
+  padding-left: 1.5rem;
+}
+.comoFunciona .cardDoares ol li,
+.comoFunciona .cardAdquirentes ol li {
+  font-weight: 600;
+  margin-bottom: 5px;
+  list-style-type: decimal;
+}
+.comoFunciona .cardDoares ol p,
+.comoFunciona .cardAdquirentes ol p {
+  font-weight: 400;
+  font-size: 0.95rem;
+  margin-bottom: 10px;
+}
+.comoFunciona .cardDoares h3 {
+  color: var(--cor6);
+}
+.comoFunciona .cardAdquirentes h3 {
+  color: var(--cor5);
+}
+
+.produtos {
+  background-color: var(--cor1);
+  padding: 4.5rem 6rem;
+  font-family: var(--fonte-principal);
+  color: var(--cor2);
+}
+.produtos h2 {
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin: 0 0 8px 0;
+  text-align: left;
+  margin-left: 2rem;
+}
+.produtos h3 {
+  font-family: var(--fonte-secundaria);
+  font-weight: 400;
+  font-size: 1.563rem;
+  color: var(--cor3);
+  margin: 0 0 2.5rem 0;
+  text-align: left;
+  margin-left: 2rem;
+}
+.produtos .cardsProdutos {
+  border: solid red 2px;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 2.25rem;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+  margin-left: 2rem;
+}
+.produtos .cardsProdutos .card1, .produtos .cardsProdutos .card2, .produtos .cardsProdutos .card3 {
+  box-sizing: border-box;
+  background-color: transparent;
+  border: solid var(--cor4) 2px;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 320px;
+  flex: 0 1 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.produtos .cardsProdutos .card1 img, .produtos .cardsProdutos .card2 img, .produtos .cardsProdutos .card3 img {
+  display: block;
+  width: 100%;
+  height: 210px;
+  margin-bottom: 1rem;
+  background-color: #e9ecef;
+}
+.produtos .cardsProdutos .card1 .content, .produtos .cardsProdutos .card2 .content, .produtos .cardsProdutos .card3 .content {
+  background-color: var(--cor7);
+  padding: 1.5rem 1.6rem 2rem 1.6rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+.produtos .cardsProdutos .card1 h4, .produtos .cardsProdutos .card2 h4, .produtos .cardsProdutos .card3 h4 {
+  font-family: var(--fonte-secundaria);
+  font-weight: 400;
+  font-size: 1.25rem;
+  color: #111827;
+  margin-top: 0.25rem;
+}
+.produtos .cardsProdutos button {
+  background-color: var(--cor4);
+  color: var(--cor1);
+  border: none;
+  border-radius: 6px;
+  padding: 10px 30px;
+  cursor: pointer;
+  font-family: var(--fonte-secundaria);
+  font-weight: 400;
+  transition: background-color 0.3s ease;
+}
+.produtos .cardsProdutos button:hover {
+  background-color: var(--cor6);
 }
 
 footer {
