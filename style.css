@@ -210,7 +210,6 @@ header nav ul li#starNow a:hover {
   margin-left: 2rem;
 }
 .produtos .cardsProdutos {
-  border: solid red 2px;
   display: flex;
   justify-content: space-evenly;
   gap: 2.25rem;
@@ -224,8 +223,8 @@ header nav ul li#starNow a:hover {
   border: solid var(--cor4) 2px;
   border-radius: 8px;
   overflow: hidden;
-  width: 320px;
-  flex: 0 1 320px;
+  width: 280px;
+  flex: 0 1 280px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -234,8 +233,7 @@ header nav ul li#starNow a:hover {
 .produtos .cardsProdutos .card1 img, .produtos .cardsProdutos .card2 img, .produtos .cardsProdutos .card3 img {
   display: block;
   width: 100%;
-  height: 210px;
-  margin-bottom: 1rem;
+  height: 220px;
   background-color: #e9ecef;
 }
 .produtos .cardsProdutos .card1 .content, .produtos .cardsProdutos .card2 .content, .produtos .cardsProdutos .card3 .content {
@@ -253,7 +251,19 @@ header nav ul li#starNow a:hover {
   color: #111827;
   margin-top: 0.25rem;
 }
-.produtos .cardsProdutos button {
+.produtos .cardsProdutos .card1 p, .produtos .cardsProdutos .card2 p, .produtos .cardsProdutos .card3 p {
+  font-family: var(--fonte-principal);
+  font-size: 0, 95rem;
+  font-weight: 400;
+  color: var(--cor3);
+  margin: 0;
+  line-height: 1.4;
+  max-height: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.produtos .cardsProdutos .card1 button, .produtos .cardsProdutos .card2 button, .produtos .cardsProdutos .card3 button {
+  align-self: center;
   background-color: var(--cor4);
   color: var(--cor1);
   border: none;
@@ -264,10 +274,132 @@ header nav ul li#starNow a:hover {
   font-weight: 400;
   transition: background-color 0.3s ease;
 }
-.produtos .cardsProdutos button:hover {
+.produtos .cardsProdutos .card1 button:hover, .produtos .cardsProdutos .card2 button:hover, .produtos .cardsProdutos .card3 button:hover {
   background-color: var(--cor6);
 }
 
-footer {
+.feedbacks {
+  background-color: var(--cor7);
+  padding: 6rem 5vw;
+  text-align: center;
+}
+.feedbacks h2 {
+  font-family: var(--fonte-principal);
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: var(--cor2);
+  margin-bottom: 0.5rem;
+}
+.feedbacks h3 {
+  font-family: var(--fonte-secundaria);
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: var(--cor3);
+  margin-bottom: 3rem;
+}
+.feedbacks .cardsFeedbacks {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.feedbacks .card {
+  border: solid 2px #9CA3AF;
+  border-width: 1px 1px 1px 4px;
+  border-radius: 8px;
+  padding: 2rem;
+  max-width: 350px;
+  width: 100%;
+  transition: transform 0.25s ease, box shadow 0.25s ease;
+}
+.feedbacks .card:hover {
+  transform: translate(-6px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+.feedbacks .card img {
+  margin-bottom: 1rem;
+}
+.feedbacks .card p {
+  font-family: var(--fonte-principal);
+  font-size: 1rem;
+  color: var(--cor3);
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+  align-items: baseline;
+  text-align: left;
+}
+.feedbacks .card .info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
+}
+.feedbacks .card .info img {
+  width: 35px;
+  height: 35px;
+  margin-right: 8px;
+}
+.feedbacks .card .info .usuario {
+  font-weight: 600;
+}
+.feedbacks .card .info .tipo {
+  font-style: italic;
+  color: var(--cor3);
+}
+
+.saberMais {
+  background-color: var(--cor1);
+  padding: 6rem;
+  text-align: center;
+}
+.saberMais h2 {
+  font-family: var(--fonte-principal);
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-bottom: 0.75rem;
+}
+.saberMais h3 {
+  font-family: var(--fonte-secundaria);
+  font-size: 1.563rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+.saberMais .buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  align-items: center;
+}
+.saberMais .buttons .btn-comecar {
+  background-color: var(--cor4);
+  color: var(--cor1);
+  padding: 12px 35px;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: none;
+  gap: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.saberMais .buttons .btn-comecar:hover {
+  border: solid 2px var(--cor6);
+  background-color: transparent;
+  color: var(--cor4);
+}
+.saberMais .buttons .btn-saber-mais {
+  background-color: transparent;
+  color: var(--cor6);
+  padding: 10px 34px;
+  border: solid var(--cor6) 2px;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.saberMais .buttons .btn-saber-mais:hover {
+  background-color: var(--cor6);
+  color: var(--cor1);
+}
+.saberMais footer {
   background-color: var(--cor2);
 }/*# sourceMappingURL=style.css.map */
